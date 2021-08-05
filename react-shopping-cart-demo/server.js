@@ -194,7 +194,14 @@ app.get("/", (req, res) => {
 });
 
 // Startup the Express server listener
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}...`));
+// app.listen(PORT, () => console.log(`Server listening on port ${PORT}...`));
+
+// Changed per Heroku docs:
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 
 // Stop the server on any app warnings
 process.on("warning", e => {
