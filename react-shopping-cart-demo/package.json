@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "start": "PORT=5000 node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

@@ -199,7 +199,7 @@ app.get("/", (req, res) => {
 // Changed per Heroku docs:
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 5000;
+  port = 8000;
 }
 app.listen(port);
 
