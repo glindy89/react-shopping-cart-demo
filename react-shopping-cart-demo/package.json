@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git@github.com:adobe/target-nodejs-sdk-samples.git"
   },
+  "engines": {
+    "node": "10.16.2"
+  },
   "author": "Adobe Systems Inc.",
   "license": "Apache-2.0",
   "dependencies": {
