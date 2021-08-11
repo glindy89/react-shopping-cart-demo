@@ -2,6 +2,5 @@
   "client": "adobeinternallamontc",
   "organizationId": "2CAB2CAD547352740A4C98C6@AdobeOrg",
   "timeout": 10000,
-  "serverDomain": "adobeinternallamontc.tt.omtrdc.net",
-  "propertyToken": "b4141049-cfcc-a923-32f3-c6f627e243b7"
+  "serverDomain": "adobeinternallamontc.tt.omtrdc.net"
 }
