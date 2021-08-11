@@ -27,13 +27,8 @@
       // serverState: ${JSON.stringify(serverState, null, " ")}
     }
   </script>
-  <script>
-  function targetPageParams() {
-    return {
-      "at_property": "b4141049-cfcc-a923-32f3-c6f627e243b7"
-    };
-  }
-</script>
+   
+
   <script src="at.js"></script>
 </head>
 <body>

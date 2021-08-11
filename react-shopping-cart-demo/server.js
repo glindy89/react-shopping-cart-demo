@@ -50,8 +50,8 @@ function sendHtml(res, targetResponse) {
   let result = TEMPLATE.replace(/\$\{organizationId\}/g, CONFIG.organizationId)
     .replace("${clientCode}", CONFIG.client)
     .replace("${visitorState}", JSON.stringify(targetResponse.visitorState))
-    .replace("${serverState}", JSON.stringify(serverState, null, " "))
-    .replace("${propertyToken}", CONFIG.propertyToken); 
+    .replace("${serverState}", JSON.stringify(serverState, null, " "));
+    
 
   if (CONFIG.serverDomain) {
     result = result.replace("${serverDomain}", CONFIG.serverDomain);
@@ -73,8 +73,8 @@ function sendErrorHtml(res) {
   let result = TEMPLATE.replace(/\$\{organizationId\}/g, CONFIG.organizationId)
     .replace("${clientCode}", CONFIG.client)
     .replace("${visitorState}", "{}")
-    .replace("${serverState}", "{}")
-    .replace("${propertyToken}", CONFIG.propertyToken);
+    .replace("${serverState}", "{}");
+   
 
   if (CONFIG.serverDomain) {
     result = result.replace("${serverDomain}", CONFIG.serverDomain);
