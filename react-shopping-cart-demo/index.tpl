@@ -18,6 +18,7 @@
   </script>
   <script>
     window.targetGlobalSettings = {
+      cookieDomain: "herokuapp.com",
       overrideMboxEdgeServer: true,
       clientCode: "${clientCode}",
       imsOrgId: "${organizationId}",
