@@ -23,7 +23,8 @@
       clientCode: "${clientCode}",
       imsOrgId: "${organizationId}",
       serverDomain: "${serverDomain}",
-      serverState: ${serverState} || {}
+      //serverState: ${serverState} || {}
+      serverState: ${JSON.stringify(serverState, null, " ")}
     }
   </script>
   <script>
